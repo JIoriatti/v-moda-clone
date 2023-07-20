@@ -1,0 +1,30 @@
+.container{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 47px 4px 64px;
+    align-items: center;
+}
+.logo{
+    margin-top: .2em;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 24px;
+    text-transform: uppercase;
+    font-size: 12.3px;
+    font-family: var(--themeFontMd);
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+.navIconContainer{
+    display: flex;
+    gap: 30px;
+}
