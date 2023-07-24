@@ -26,6 +26,24 @@
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
 }
+.navItem{
+    position: relative;
+    cursor: pointer;
+}
+.navItem::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    width: 0;
+    height: 2px;
+
+    transition: width 0.3s ease;
+}
+.navItem:hover::after{
+    width: 100%;
+}
 .navIconContainer{
     display: flex;
     gap: 30px;

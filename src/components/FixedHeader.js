@@ -39,7 +39,7 @@ export default function FixedHeader(){
                     <li className={styles.navItem}>Headphones</li>
                     <li className={styles.navItem}>Accessories</li>
                     <li className={styles.navItem}>Shop By</li>
-                    <li className={styles.navitem}>Customization</li>
+                    <li className={styles.navItem}>Customization</li>
                     <li className={styles.navItem}>Sale</li>
                 </ul>
             </nav>
