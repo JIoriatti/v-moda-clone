@@ -10,7 +10,7 @@ export default function HeaderWrapper({ children }){
         <div 
             className={styles.wrapper}
             style={{
-                transform: state.isTopOfPage ? 'translateY(0)' : 'translateY(-48px)'
+                transform: (state.isTopOfPage || state.isDropdownOpen) ? 'translateY(0)' : 'translateY(-48px)'
             }}
         >
             {children}

@@ -1,9 +1,11 @@
+.buttonWrapper{
+    position: relative;
+}
 .navButton{
     all: unset;
     display: flex;
     align-items: center;
-    position: relative;
-    padding: 16px 0 18px 0;
+    padding: 10px 0 12px 0;
     color: rgb(190, 190, 190);
     font-family: var(--themeFontMd);
     font-weight: 400;
@@ -13,19 +15,42 @@
     width: max-content;
 
     cursor: pointer;
+
+    transition: color .2s cubic-bezier(.645,.045,.355,1);
+}
+.navButton:hover{
+    color: white;
 }
 .svg{
-    padding-top: 2px;
-    padding-left: 4px;
+    margin: 2px 0 0 4px;
+    transition: transform .2s cubic-bezier(.645,.045,.355,1);
 }
 .dropdown{
     position: absolute;
+    top: 100%;
+    left: -16px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--slateDarkGray);
     height: auto;
     padding: 12px 0 12px 0;
+    width: max-content;
 }
 .listItem{
+    font-family: var(--themeFontMd);
     font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.1em;
     color: #c1c1c1;
     padding: 4px 16px 4px 16px;
+    text-decoration: none;
+    font-weight: 400;
+
+    transition: color .2s cubic-bezier(.645,.045,.355,1);
+}
+.listItem:hover{
+    color: white;
+}
+.active{
+    color: white;
 }

@@ -16,6 +16,8 @@ export function useDispatchContext(){
 export default function ReducerProvider({ children }){
     const [state, dispatch] = useReducer(reducer, {
         isTopOfPage: true,
+        selectedNav: null,
+        isDropdownOpen: false,
     })
     return (
         <StateContext.Provider value={state}>

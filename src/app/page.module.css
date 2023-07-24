@@ -5,11 +5,68 @@
   align-items: center;
   min-height: 100vh;
 }
-.hero{
+.centering{
   position: absolute;
   top: 0;
-  height: calc(100% - 48px);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
-  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+.heroContainer{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
   z-index: 0;
+}
+.hero{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 31px;
+  color: white;
+  top: 50%;
+  pointer-events: all;
+}
+.header{
+  font-size: 68px;
+  line-height: 111%;
+  font-style: normal;
+  font-family: var(--themeFontBold);
+  font-weight: 400;
+  /* padding-top: 2px; */
+}
+.subHeader{
+  font-size: 18px;
+  /* padding-bottom: 2px; */
+  margin-bottom: 2px;
+}
+.discoverBtn{
+  all: unset;
+  font-family: var(--themeFontMd);
+  font-style: normal;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  padding: 9px 23px 11px 23px;
+  outline: 1px solid rgb(170, 170, 170);
+
+  cursor: pointer;
+}
+.discoverBtn:hover{
+  background-color: black;
+  color: white;
+  outline: 1px solid black;
 }
