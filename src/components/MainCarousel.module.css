@@ -1,0 +1,81 @@
+.carouselSection{
+    /* margin: auto; */
+    position: relative;
+    width: 100%;
+    max-width: 1680px;
+    padding: 64px;
+}
+.carousel{
+    width: 100%;
+    overflow: hidden;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: default;
+}
+.rowImage{
+    flex: 0 0 40%;
+    width: 40%;
+    padding: 40px;
+}
+.imageWrapper{
+    position: relative;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.rowContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.shop{
+    all: unset;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px 36px 10px 36px;
+    cursor: pointer;
+}
+.shop:hover{
+    background-color: black;
+    color: white;
+}
+.prev,.next{
+    background: transparent;
+    height: 64px;
+    width: 64px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    z-index: 10;
+}
+.next{
+    left: unset;
+    right: 64px;
+}
+.prev:hover,.next:hover{
+    background: black;
+}
+.buttonSvg{
+
+}
+.buttonSvgRight{
+    transform: rotate(180deg);
+}

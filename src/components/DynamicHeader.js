@@ -12,16 +12,16 @@ export default function DynamicHeader(){
 
     useEffect(()=>{
         const trackScroll = (e) =>{
-            if(e.target.scrollTop === 0){
+            if(e.target.lastChild.scrollTop === 0){
                 dispatch({type: ACTIONS.SET_IS_TOP_OF_PAGE, payload: true})            
             }
             else{
                 dispatch({type: ACTIONS.SET_IS_TOP_OF_PAGE, payload: false})     
             }
         }
-        document.body.addEventListener('scroll', trackScroll)
+        window.document.addEventListener('scroll', trackScroll)
 
-        return ()=> document.body.removeEventListener('scroll', trackScroll)
+        return ()=> window.document.removeEventListener('scroll', trackScroll)
     },[])
 
     return (

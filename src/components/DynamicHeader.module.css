@@ -6,7 +6,7 @@
     height: 48px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 47px 0 64px;
+    padding: 0 64px;
     background-color: var(--slateDarkGray);
 
     z-index: 20;

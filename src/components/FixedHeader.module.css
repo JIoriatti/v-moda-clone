@@ -6,12 +6,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 47px 4px 64px;
+    padding: 0 64px 4px 64px;
     align-items: center;
 
     z-index: 2;
 }
 .logo{
+    margin-top: .2em;
+}
+.logoLink{
     margin-top: .2em;
 }
 .nav{
@@ -35,11 +38,16 @@
     position: absolute;
     left: 0;
     bottom: -5px;
-    background-color: white;
     width: 0;
     height: 2px;
 
     transition: width 0.3s ease;
+}
+.navItem[data-color='white']::after{
+    background-color: white;
+}
+.navItem[data-color='black']::after{
+    background-color: black;
 }
 .navItem:hover::after{
     width: 100%;
@@ -47,4 +55,7 @@
 .navIconContainer{
     display: flex;
     gap: 30px;
+}
+.navIcon{
+    cursor: pointer;
 }
