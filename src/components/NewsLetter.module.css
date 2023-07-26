@@ -1,0 +1,129 @@
+.container{
+    width: 100%;
+    background-color: #f4f4f4;
+    position: relative;
+    padding: 100px 0;
+}
+.img1,.img2{
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.img2{
+    top: unset;
+    bottom: 10px;
+    left: unset;
+    right: 0;
+}
+.subscribeWidget{
+    text-align: center;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+.header{
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 133%;
+    font-family: var(--themeFontBold);
+    font-weight: 400;
+}
+.text{
+    font-family: var(--themeFontRoman);
+    font-size: 16px;
+    line-height: 148%;
+}
+.formContainer{
+
+}
+.form{
+
+}
+.centerFormContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.centerForm{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+.emailLabel{
+    margin-bottom: 8px;
+    flex: 0 0 100%;
+    text-align: left;
+    font-family: var(--themeFontRoman);
+    color: #262626;
+    font-size: 12px;
+    line-height: 133%;
+}
+.email{
+    margin-right: 24px;
+    padding: 8px;
+    border-style: none;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    line-height: 133%;
+    background-color: transparent;
+    color: inherit;
+
+    font-family: var(--themeFontRoman);
+}
+.subscribe{
+    border: 1px solid #000;
+    height: 40px;
+    padding: 8px 50px;
+    min-width: 204px;
+    transition: background-color .3s ease, color .3s ease;
+    display: table;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: var(--themeFontMd);
+    font-size: 16px;
+    line-height: 118%;
+}
+.subscribe:hover{
+    background-color: black;
+    color: white;
+}
+.privacyLabel{
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 133%;
+    color: #262626;
+    font-family: var(--themeFontRoman);
+}
+.checkbox{
+
+}
+.checkbox::selection{
+    all: unset;
+    background: black;
+    color: black;
+}
+.inlineLink{
+    color: #000;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 133%;
+    text-align: left;
+    font-family: var(--themeFontRoman);
+}
+@media (max-width: 1920px){
+    .subscribeWidget{
+        max-width: 50%;
+    }
+}

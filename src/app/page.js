@@ -4,6 +4,8 @@ import MainCarousel from '@/components/MainCarousel'
 import Personalize from '@/components/Personalize'
 import Banner from '@/components/Banner'
 import QuoteCarousel from '@/components/QuoteCarousel'
+import ImageGrid from '@/components/ImageGrid'
+import NewsLetter from '@/components/NewsLetter'
 
 export default function Home() {
   return (
@@ -28,6 +30,8 @@ export default function Home() {
       <section className={styles.quoteCarouselWrapper}>
         <QuoteCarousel /> 
       </section>
+      <ImageGrid />
+      <NewsLetter />
     </main>
   )
 }

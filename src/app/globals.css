@@ -103,3 +103,17 @@ body{
   outline: none;
   box-shadow: none !important;
 }
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border-radius: 0;
+  font-size: inherit;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked{
+  background-color: black;
+}
