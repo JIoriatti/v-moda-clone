@@ -1,7 +1,7 @@
 .container{
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 64px;
     width: 100%;
     display: flex;

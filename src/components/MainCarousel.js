@@ -4,17 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import 'flickity/css/flickity.css'
 
 export default function MainCarousel() {
-    const [isButtonHovered, setIsButtonHovered] = useState({
-        left: false,
-        right: false,
-    })
     const carousel = useRef(null);
-
-    const handleButtonClick = () =>{
-
-    }
-
-
 
     async function initFlickity() {
         if (typeof window !== 'undefined' && carousel.current) {
@@ -54,6 +44,10 @@ export default function MainCarousel() {
         buttons.forEach((button)=>{
             button.classList.add('prev-next-btn');  
         })
+        // const pageDots = document.querySelectorAll('.flickity-page-dot');
+        // pageDots.forEach((dot)=>{
+        //     dot.classList.add('pageDot');
+        // })
         
     }
 
@@ -63,19 +57,6 @@ export default function MainCarousel() {
 
     return (
         <div className={styles.carouselSection}>
-            {/* <button
-                className={styles.prev}
-                onMouseEnter={() => setIsButtonHovered((prevState) => ({
-                    ...prevState,
-                    left: true
-                }))}
-                onMouseLeave={() => setIsButtonHovered((prevState) => ({
-                    ...prevState,
-                    left: false
-                }))}
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={isButtonHovered.left ? '#fff' : '#000000'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.buttonSvg} aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            </button> */}
             <div ref={carousel} className={styles.carousel}>
                 <div className={styles.row}>
                     <div className={styles.rowImage}>
@@ -88,32 +69,67 @@ export default function MainCarousel() {
                         <h2 className={styles.contentTitle}>Crossfade 2 Wireless</h2>
                         <p className={styles.contentText}>Crossfade 2 Wireless are now 17% off. <br />
                             Get a pair of these customizable Bluetooth headphones before it’s too late. <br />
-                            Hurry up till stock lasts! <br />
+                            Hurry up till stock lasts! <br /> <br />
                         </p>
-                        <button className={styles.shop}>Shop now</button>
+                        <a 
+                            className={styles.shop}
+                            href='/'
+                        ><p
+                        style={{
+                            width: '100%',
+                            paddingTop: '9px'
+                        }}
+                        >Shop now</p></a>
                     </div>
                 </div>
                 <div className={styles.row}>
-                    <img src="/test2.jpg" />
+                    <div className={styles.rowImage}>
+                        <div className={styles.imageWrapper}>
+                            <img className={styles.img} src="https://d2pz7ev4hh4qcl.cloudfront.net/assets/home_page_block_item/image/6/XFBT2A-30OFF-01.jpg" />
+                        </div>
+                    </div>
+                    <div className={styles.rowContent}>
+                        <h3 className={styles.contentHeader}>Limited Time Offer</h3>
+                        <h2 className={styles.contentTitle}>Crossfade 2 Wireless Codex Edition</h2>
+                        <p className={styles.contentText}>Up to 20% off on our Crossfade 2 Wireless Codex Edition. <br />
+                            Exceptional features at an exceptional price. <br />
+                            Hurry up till stock lasts! <br /> <br />
+                        </p>
+                        <a 
+                            className={styles.shop}
+                            href='/'
+                        ><p
+                        style={{
+                            width: '100%',
+                            paddingTop: '9px'
+                        }}
+                        >Shop now</p></a>
+                    </div>
                 </div>
                 <div className={styles.row}>
-                    <img src="/test1.jpg" />
+                    <div className={styles.rowImage}>
+                        <div className={styles.imageWrapper}>
+                            <img className={styles.img} src="https://d2pz7ev4hh4qcl.cloudfront.net/assets/home_page_block_item/image/64/Forza-homepage.jpg" />
+                        </div>
+                    </div>
+                    <div className={styles.rowContent}>
+                        <h3 className={styles.contentHeader}>Discover</h3>
+                        <h2 className={styles.contentTitle}>V-MODA Sale Section</h2>
+                        <p className={styles.contentText}>The best products, at the best prices. <br />
+                             <br />
+                        </p>
+                        <a 
+                            className={styles.shop}
+                            href='/'
+                        ><p
+                        style={{
+                            width: '100%',
+                            paddingTop: '9px'
+                        }}
+                        >View all offers</p></a>
+                    </div>
                 </div>
             </div>
-            {/* <button
-                className={styles.next}
-                onMouseEnter={() => setIsButtonHovered((prevState) => ({
-                    ...prevState,
-                    right: true
-                }))}
-                onMouseLeave={() => setIsButtonHovered((prevState) => ({
-                    ...prevState,
-                    right: false
-                }))}
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={isButtonHovered.right ? '#fff' : '#000000'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.buttonSvgRight} aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            </button> */}
-           
         </div>
     );
 }

@@ -18,9 +18,16 @@
   z-index: 1;
   pointer-events: none;
 }
+.heroWrapper{
+  position: relative;
+  width: 100%;
+  height: calc(var(--vh, 1vh)*100);
+  margin-bottom: 40px;
+}
 .heroContainer{
-  /* position: absolute; */
+  position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   z-index: 0;
@@ -29,7 +36,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .intro{
   display: flex;
@@ -37,6 +44,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  padding-left: 16px;
   gap: 31px;
   color: white;
   top: 50%;

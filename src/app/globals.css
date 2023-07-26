@@ -27,25 +27,34 @@
 html{
   height: auto;
   -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
 }
 html,body{
   /* height: max-content; */
-  min-width: 100vw;
+  /* min-width: 100vw; */
 
   font-family: var(--themeFontRoman);
 }
 body{
+  width: 100%;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
 }
 .prev-next-btn{
+  padding-top: 4px !important;
   border: 1px solid black !important;
   height: 64px !important;
   width: 64px !important;
   background: transparent !important;
 
   transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+.flickity-prev-next-button.previous{
+  left: 0 !important;
+}
+.flickity-prev-next-button.next{
+  right: 0 !important;
 }
 .prev-next-btn:active,.prev-next-btn:focus{
   opacity: 1 !important;
@@ -55,6 +64,7 @@ body{
   background: black !important;
 }
 .prev-next{
+  /* padding-top: 4px; */
   stroke: black;
   transition: stroke 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -64,4 +74,27 @@ body{
 /* .prev-next:hover{
   stroke: white;
 } */
-
+/* position dots up a bit */
+.flickity-page-dots {
+  display: block !important;
+  text-align: center !important;
+  position: static !important;
+  height: 19px !important;
+}
+/* dots are lines */
+.flickity-page-dots .flickity-page-dot {
+  display: inline-block !important;
+  height: 2px !important;
+  width: 36px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: #c1c1c1 !important;
+  margin-right: 8px !important;
+}
+.flickity-page-dot.is-selected{
+  background: black !important;
+}
+.flickity-page-dot:focus{
+  outline: none;
+  box-shadow: none !important;
+}
