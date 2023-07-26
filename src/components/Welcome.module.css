@@ -1,0 +1,40 @@
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 16px;
+    gap: 31px;
+    color: white;
+    top: 50%;
+    pointer-events: all;
+}
+.header{
+    font-size: 68px;
+    line-height: 111%;
+    font-style: normal;
+    font-family: var(--themeFontBold);
+    font-weight: 400;
+}
+.subHeader{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.discoverBtn{
+    all: unset;
+    font-family: var(--themeFontMd);
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    color: black;
+    padding: 9px 23px 11px 23px;
+    outline: 1px solid rgb(170, 170, 170);
+  
+    cursor: pointer;
+}
+.discoverBtn:hover{
+    background-color: black;
+    color: white;
+    outline: 1px solid black;
+}

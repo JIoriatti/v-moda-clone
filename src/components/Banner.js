@@ -1,8 +1,20 @@
+'use client'
 import styles from './Banner.module.css'
+import { useInView } from 'react-intersection-observer'
 
 export default function Banner(){
+    const { ref, inView, entry } = useInView({
+        threshold: 0.75,
+        triggerOnce: true,
+    })    
     return(
-        <section className={styles.container}>
+        <section 
+            ref={ref} 
+            className={styles.container}
+            style={{
+                opacity: inView ? '1' : '0'
+            }}
+        >
             <div className={styles.rightImage}>
                 <div className={styles.imageWrapper}>
                     <img className={styles.cover} data-src="https://d2pz7ev4hh4qcl.cloudfront.net/assets/home_page_block/secondary_image/6/Marnik-square.jpg" src="https://d2pz7ev4hh4qcl.cloudfront.net/assets/home_page_block/secondary_image/6/Marnik-square.jpg" alt="V-MODA x MARNIK" style={{opacity: '1'}}/>

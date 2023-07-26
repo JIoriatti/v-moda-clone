@@ -6,16 +6,13 @@ import Banner from '@/components/Banner'
 import QuoteCarousel from '@/components/QuoteCarousel'
 import ImageGrid from '@/components/ImageGrid'
 import NewsLetter from '@/components/NewsLetter'
+import Welcome from '@/components/Welcome'
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.centering}>
-        <div className={styles.intro}>
-          <h1 className={styles.header}>Elevate Your Performance.</h1>
-          <p className={styles.subHeader}>Unleash the power of precision and clarity with our cutting-edge DJ headphones.</p>
-          <button className={styles.discoverBtn}>Discover all products</button>
-        </div>
+        <Welcome />
       </div>
       <div className={styles.heroWrapper}>
         <div className={styles.heroContainer}>

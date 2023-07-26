@@ -19,7 +19,11 @@ export default function DynamicHeader(){
                 dispatch({type: ACTIONS.SET_IS_TOP_OF_PAGE, payload: false})     
             }
         }
-        window.document.addEventListener('scroll', trackScroll)
+        // on first load if page is re-loaded while scrolled
+        if(window.document.lastChild.scrollTop !== 0){
+            dispatch({type: ACTIONS.SET_IS_TOP_OF_PAGE, payload: false});
+        }
+        window.document.addEventListener('scroll', trackScroll);
 
         return ()=> window.document.removeEventListener('scroll', trackScroll)
     },[])

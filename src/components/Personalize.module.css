@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 64px;
+
+    transition: opacity .2s cubic-bezier(.645,.045,.355,1);
 }
 .left{
     width: 33.3333333333%;

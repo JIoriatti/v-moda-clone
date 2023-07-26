@@ -67,7 +67,7 @@ export default function QuoteCarousel(){
     useEffect(() => {
         initFlickity();
 
-        return ()=> savedObserver.disconnect();
+        // return ()=> savedObserver.disconnect();
     }, []);
 
     return(

@@ -1,11 +1,11 @@
 'use client'
 import styles from './FixedHeader.module.css'
 import { useStateContext, useDispatchContext } from '../../utils/reducerContext'
+import { useRef } from 'react';
 
 export default function FixedHeader(){
     const state = useStateContext();
-    const dispatch = useDispatchContext();
-
+    const headerRef = useRef(null);
 
     return(
         <section 
@@ -13,8 +13,8 @@ export default function FixedHeader(){
             style={{
                 background: state.isTopOfPage ? 'transparent' : 'white',
                 color: state.isTopOfPage ? 'white' : 'black',
-                // transform: state.isTopOfPage ? 'translateY(48px)' : 'translateY(0)'
             }}
+            ref={headerRef}
         >
             <a className={styles.logoLink} href="/">
                 <svg className={styles.logo} width="120" height="27" viewBox="0 0 120 27" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle" alt="V-Moda Logo">

@@ -1,8 +1,20 @@
+'use client'
 import styles from './ImageGrid.module.css'
+import { useInView } from 'react-intersection-observer'
 
 export default function ImageGrid(){
+    const { ref, inView, entry } = useInView({
+        threshold: 0.6,
+        triggerOnce: true,
+    });
     return (
-        <section className={styles.container}>
+        <section 
+            ref={ref} 
+            className={styles.container}
+            style={{
+                opacity: inView ? '1' : '0'
+            }}
+        >
             <ul className={styles.imageList}>
                 <li className={styles.tile}>
                     <a className={styles.link} href="/">

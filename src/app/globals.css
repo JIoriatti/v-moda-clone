@@ -30,16 +30,14 @@ html{
   overflow-y: scroll;
 }
 html,body{
-  /* height: max-content; */
-  /* min-width: 100vw; */
 
   font-family: var(--themeFontRoman);
 }
 body{
   width: 100%;
   position: relative;
-  /* overflow-x: hidden; */
-  /* overflow-y: scroll; */
+
+  animation: fadeIn 0.3s cubic-bezier(.645,.045,.355,1);
 }
 .prev-next-btn{
   padding-top: 4px !important;
@@ -69,22 +67,19 @@ body{
   background: black !important;
 }
 .prev-next{
-  /* padding-top: 4px; */
   stroke: black;
   transition: stroke 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .prev-next-btn:hover .prev-next{
   stroke: white;
 }
-/* .prev-next:hover{
-  stroke: white;
-} */
-/* position dots up a bit */
+
 .flickity-page-dots {
   display: block !important;
   text-align: center !important;
   position: static !important;
   height: 19px !important;
+  /* padding-left: 2px !important; */
 }
 /* dots are lines */
 .flickity-page-dots .flickity-page-dot {
@@ -94,7 +89,8 @@ body{
   margin: 0 !important;
   border-radius: 0 !important;
   background: #c1c1c1 !important;
-  margin-right: 8px !important;
+  margin-right: 10px !important;
+  margin-left: 2px !important;
 }
 .flickity-page-dot.is-selected{
   background: black !important;
@@ -116,4 +112,13 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:checked{
   background-color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

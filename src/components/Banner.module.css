@@ -6,6 +6,8 @@
     margin: auto;
     max-width: 1680px;
     padding: 0 64px;
+    
+    transition: opacity .2s cubic-bezier(.645,.045,.355,1);
 }
 .rightImage{
     position: relative;
