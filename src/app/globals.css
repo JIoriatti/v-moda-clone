@@ -56,6 +56,11 @@ body{
 .flickity-prev-next-button.next{
   right: 0 !important;
 }
+.flickity-prev-next-button:disabled{
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
 .prev-next-btn:active,.prev-next-btn:focus{
   opacity: 1 !important;
   box-shadow: none !important;

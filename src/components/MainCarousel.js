@@ -25,6 +25,7 @@ export default function MainCarousel() {
         container.classList.add('carouselContainer');
         slider.classList.add('slider');
         viewport.classList.add('viewport');
+       
         const prevSvg = document.querySelectorAll('.flickity-button-icon');
         prevSvg.forEach((el)=> el.remove());
         const parser = new DOMParser();
@@ -44,11 +45,6 @@ export default function MainCarousel() {
         buttons.forEach((button)=>{
             button.classList.add('prev-next-btn');  
         })
-        // const pageDots = document.querySelectorAll('.flickity-page-dot');
-        // pageDots.forEach((dot)=>{
-        //     dot.classList.add('pageDot');
-        // })
-        
     }
 
     useEffect(() => {
@@ -116,7 +112,7 @@ export default function MainCarousel() {
                         <h3 className={styles.contentHeader}>Discover</h3>
                         <h2 className={styles.contentTitle}>V-MODA Sale Section</h2>
                         <p className={styles.contentText}>The best products, at the best prices. <br />
-                             <br />
+                                <br />
                         </p>
                         <a 
                             className={styles.shop}

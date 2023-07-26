@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import MainCarousel from '@/components/MainCarousel'
+import Personalize from '@/components/Personalize'
+import Banner from '@/components/Banner'
+import QuoteCarousel from '@/components/QuoteCarousel'
 
 export default function Home() {
   return (
@@ -19,12 +22,12 @@ export default function Home() {
         </video>
         </div>
       </div>
-      
-          <MainCarousel />
-      
-
-
-          
+      <MainCarousel/> 
+      <Personalize />
+      <Banner />
+      <section className={styles.quoteCarouselWrapper}>
+        <QuoteCarousel /> 
+      </section>
     </main>
   )
 }
