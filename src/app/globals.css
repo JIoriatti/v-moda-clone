@@ -99,6 +99,10 @@ body{
   outline: none;
   box-shadow: none !important;
 }
+.quoteDots{
+  position: absolute !important;
+  bottom: -80px !important;
+}
 input[type="checkbox"]{
   -webkit-appearance: none;
   appearance: none;

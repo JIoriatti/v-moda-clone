@@ -38,6 +38,7 @@
     border-style: none;
 
     transition: transform .2s cubic-bezier(.645,.045,.355,1);
+    transition-delay: 0.5s;
 }
 
 .background{

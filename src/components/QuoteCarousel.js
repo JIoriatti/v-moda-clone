@@ -48,6 +48,9 @@ export default function QuoteCarousel(){
         buttons[2].removeAttribute('disabled');
         buttons[3].removeAttribute('disabled');
 
+        const dots = document.querySelectorAll('.flickity-page-dots');
+        dots[1].classList.add('quoteDots');
+
         // using mutation observer to remove disabled attribute when slides
         // reach beginning/end
         const mutationCallback = (mutationList, observer) => {
