@@ -1,0 +1,95 @@
+.container{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 48px 64px; 
+    margin-bottom: 68px;
+    background-color: #262626;
+    font-family: var(--themeFontBold);
+    font-size: 1em;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+}
+.col{
+    width: 25%;
+    flex: 0 0 25%;
+    padding: 0 24px 48px;
+    position: relative;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    color: white;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 24px;
+    font-family: var(--themeFontBold);
+    font-weight: 400;
+}
+.topContainer{
+    display: flex;
+    flex-direction: column;
+}
+.socials{
+    display: flex;
+    list-style: none;
+}
+.socialLink{
+    margin-right: 1rem;
+    display: inline-block;
+    opacity: .8;
+}
+.path{
+    opacity: 0.8;
+}
+.socialsLink.path:hover{
+    opacity: 1;
+}
+.bottomContainer{
+
+}
+.payments{
+    width: 100%;
+}
+.foot{
+    margin-top: 24px;
+    display: flex;
+    position: relative;
+}
+.llc{
+    width: 16.6666666667%;
+    flex: 0 0 16.6666666667%;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 133%;
+    font-family: var(--themeFontRoman);
+    color: #c1c1c1;
+}
+.footNav{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+.footNavLi{
+    font-size: 12px;
+    line-height: 133%;
+    color: #c1c1c1;
+    display: table;
+    opacity: .8;
+    margin-bottom: 0.5rem;
+    font-family: var(--themeFontRoman);
+    text-decoration: none;
+}
+.miniLogo{
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+    width: 24px
+}

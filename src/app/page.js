@@ -7,6 +7,7 @@ import QuoteCarousel from '@/components/QuoteCarousel'
 import ImageGrid from '@/components/ImageGrid'
 import NewsLetter from '@/components/NewsLetter'
 import Welcome from '@/components/Welcome'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </section>
       <ImageGrid />
       <NewsLetter />
+      <Footer />
     </main>
   )
 }
